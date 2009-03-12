@@ -4,6 +4,7 @@ use vars qw( $VERSION );
 use Test::More;
 use Carp qw( croak );
 use constant DRIVER_MODULES => (
+    "Sys::Info::OS",
     "Sys::Info::Device",
     "Sys::Info::Driver::%s",
     "Sys::Info::Driver::%s::OS",
@@ -25,6 +26,7 @@ sub new {
     my $self  = {
         _id  => $id,
         _cpu => Sys::Info::Device->new('CPU'),
+        _os  => Sys::Info::OS->new,
     };
     bless $self, $class;
     return $self;
