@@ -5,7 +5,7 @@ use Carp qw( croak );
 use Exporter ();
 use Test::More qw( no_plan );
 
-$VERSION = '0.13';
+$VERSION = '0.14';
 @ISA     = qw( Exporter  );
 @EXPORT  = qw( driver_ok );
 
