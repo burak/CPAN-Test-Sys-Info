@@ -3,13 +3,17 @@ use strict;
 use vars qw( $VERSION @ISA @EXPORT );
 use Carp qw( croak );
 use Exporter ();
-use Test::More qw( no_plan );
+use Test::More;
+use Test::Builder;
 
-$VERSION = '0.14';
+BEGIN {
+    my $test = Test::Builder->new;
+    $test->no_plan if ! $test->has_plan;
+}
+
+$VERSION = '0.15';
 @ISA     = qw( Exporter  );
 @EXPORT  = qw( driver_ok );
-
-ok(1, "Workaround EU::MM Bug");
 
 sub driver_ok {
     require_ok("Test::Sys::Info::Driver");
@@ -32,6 +36,14 @@ Test::Sys::Info - Centralized test suite for Sys::Info.
     driver_ok('Windows'); # or Linux, etc.
 
 =head1 DESCRIPTION
+
+This is a centralized test suite for Sys::Info Drivers.
+
+=head1 TESTS
+
+=head2 driver_ok OSID
+
+Tests the driver.
 
 =head1 SEE ALSO
 

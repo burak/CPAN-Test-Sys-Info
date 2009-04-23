@@ -1,13 +1,9 @@
 lib/Test/Sys/Info.pm
 lib/Test/Sys/Info/Driver.pm
-t/01-pod.t
-t/02-pod-coverage.t
 t/03-basic.t
-tools/Build.pm
 Makefile.PL
 Build.PL
 Changes
 MANIFEST
 README
-PREREQ
-META.yml
+SPEC
