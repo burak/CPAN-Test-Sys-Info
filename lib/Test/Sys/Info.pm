@@ -20,6 +20,9 @@ sub driver_ok {
     Test::Sys::Info::Driver->new( shift )->run;
 }
 
+ok(1, "EU::MM What a dumb module you are")
+    if ! $ENV{HARNESS_ACTIVE};
+
 1;
 
 __END__
