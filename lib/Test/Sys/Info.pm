@@ -11,7 +11,7 @@ BEGIN {
     $test->no_plan if ! $test->has_plan;
 }
 
-$VERSION = '0.15';
+$VERSION = '0.16';
 @ISA     = qw( Exporter  );
 @EXPORT  = qw( driver_ok );
 
@@ -51,19 +51,5 @@ Tests the driver.
 =head1 SEE ALSO
 
 L<Sys::Info>.
-
-=head1 AUTHOR
-
-Burak Gürsoy, E<lt>burakE<64>cpan.orgE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2009 Burak Gürsoy. All rights reserved.
-
-=head1 LICENSE
-
-This library is free software; you can redistribute it and/or modify 
-it under the same terms as Perl itself, either Perl version 5.10.0 or, 
-at your option, any later version of Perl 5 you may have available.
 
 =cut
