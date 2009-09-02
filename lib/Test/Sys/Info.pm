@@ -11,7 +11,7 @@ BEGIN {
     $test->no_plan if ! $test->has_plan;
 }
 
-$VERSION = '0.16';
+$VERSION = '0.17';
 @ISA     = qw( Exporter  );
 @EXPORT  = qw( driver_ok );
 
