@@ -1,8 +1,9 @@
 package Test::Sys::Info;
 use strict;
+use warnings;
 use vars qw( $VERSION @ISA @EXPORT );
 use Carp qw( croak );
-use Exporter ();
+use base qw( Exporter );
 use Test::More;
 use Test::Builder;
 
@@ -11,16 +12,15 @@ BEGIN {
     $test->no_plan if ! $test->has_plan;
 }
 
-$VERSION = '0.17';
-@ISA     = qw( Exporter  );
+$VERSION = '0.20';
 @EXPORT  = qw( driver_ok );
 
 sub driver_ok {
-    require_ok("Test::Sys::Info::Driver");
-    Test::Sys::Info::Driver->new( shift )->run;
+    require_ok('Test::Sys::Info::Driver');
+    return Test::Sys::Info::Driver->new( shift )->run;
 }
 
-ok(1, "EU::MM What a dumb module you are")
+ok(1, 'EU::MM What a dumb module you are')
     if ! $ENV{HARNESS_ACTIVE};
 
 1;

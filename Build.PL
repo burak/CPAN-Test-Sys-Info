@@ -1,4 +1,5 @@
 use strict;
+use warnings;
 use lib qw( builder );
 use Build;
 
