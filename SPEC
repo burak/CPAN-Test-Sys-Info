@@ -1,8 +1,6 @@
 {
     module_name    => 'Test::Sys::Info',
-    requires       => {
-        $] < 5.006 ?  ( 'warnings::compat' => 0 ) : (),
-    },
+    requires       => {},
     meta_merge => {
         resources => {
             repository => 'http://bitbucket.org/burak/cpan-test-sys-info/',
