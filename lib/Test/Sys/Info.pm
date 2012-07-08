@@ -12,7 +12,7 @@ BEGIN {
     $test->no_plan if ! $test->has_plan;
 }
 
-$VERSION = '0.20';
+$VERSION = '0.21';
 @EXPORT  = qw( driver_ok );
 
 sub driver_ok {
