@@ -3,7 +3,7 @@
     requires       => {},
     meta_merge => {
         resources => {
-            repository => 'http://bitbucket.org/burak/cpan-test-sys-info/',
+            repository => 'http://github.com/burak/cpan-test-sys-info/',
         },
     },
     BUILDER => {
