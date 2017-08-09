@@ -1,8 +1,0 @@
-lib/Test/Sys/Info.pm
-lib/Test/Sys/Info/Driver.pm
-t/03-basic.t
-Build.PL
-Changes
-MANIFEST
-README
-SPEC

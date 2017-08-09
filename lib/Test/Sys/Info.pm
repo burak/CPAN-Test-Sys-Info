@@ -1,7 +1,7 @@
 package Test::Sys::Info;
+
 use strict;
 use warnings;
-use vars qw( $VERSION @ISA @EXPORT );
 use Carp qw( croak );
 use base qw( Exporter );
 use Test::More;
@@ -12,8 +12,7 @@ BEGIN {
     $test->no_plan if ! $test->has_plan;
 }
 
-$VERSION = '0.21';
-@EXPORT  = qw( driver_ok );
+our @EXPORT  = qw( driver_ok );
 
 sub driver_ok {
     require_ok('Test::Sys::Info::Driver');

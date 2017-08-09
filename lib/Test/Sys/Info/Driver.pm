@@ -1,7 +1,8 @@
 package Test::Sys::Info::Driver;
+
 use strict;
 use warnings;
-use vars qw( $VERSION );
+
 use Test::More;
 use Carp qw( croak );
 use constant DRIVER_MODULES => (
@@ -13,8 +14,6 @@ use constant DRIVER_MODULES => (
     'Sys::Info::Driver::%s::Device',
     'Sys::Info::Driver::%s::Device::CPU',
 );
-
-$VERSION = '0.20';
 
 sub new {
     my $class = shift;
