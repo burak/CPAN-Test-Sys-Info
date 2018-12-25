@@ -18,7 +18,11 @@ use constant DRIVER_MODULES => (
 sub new {
     my $class = shift;
     my $id    = shift || croak 'Driver ID is missing';
-    my @suite = map { sprintf $_, $id } DRIVER_MODULES;
+    my @suite = map {
+        my $name = $_;
+        $name =~ m{ \%s }xms ? sprintf( $name, $id ) : $name;
+    } DRIVER_MODULES;
+
     foreach my $module ( @suite ) {
         require_ok( $module );
         ok( $module->import || 1, "$module imported" );
