@@ -1,5 +1,7 @@
 package Test::Sys::Info;
 
+# ABSTRACT: Centralized test suite for Sys::Info.
+
 use strict;
 use warnings;
 use Carp qw( croak );
@@ -27,10 +29,6 @@ ok(1, 'EU::MM What a dumb module you are')
 __END__
 
 =pod
-
-=head1 NAME
-
-Test::Sys::Info - Centralized test suite for Sys::Info.
 
 =head1 SYNOPSIS
 
