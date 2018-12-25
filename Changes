@@ -1,6 +1,8 @@
 Revision history for Perl extension Test::Sys::Info.
 
 {{$NEXT}}
+
+0.22 2018-12-25 BURAK
     - Migrate to dzil
 
 0.21 Sun Jul  8 01:50:04 2012
