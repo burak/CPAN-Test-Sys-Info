@@ -3,7 +3,7 @@ package Test::Sys::Info;
 use strict;
 use warnings;
 use Carp qw( croak );
-use base qw( Exporter );
+use parent qw( Exporter );
 use Test::More;
 use Test::Builder;
 
